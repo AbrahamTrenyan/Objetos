@@ -10,3 +10,7 @@ de,compuesta se escribe con mayúscula.&text=PascalCase es similar a el,PascalCa
 está en mayúscula.
 📝 Instructiones:
 1. Definir una nueva class llamada Persona.*/
+class Persona{
+    constructor(){
+    }
+} 

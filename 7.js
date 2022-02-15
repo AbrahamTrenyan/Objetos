@@ -17,3 +17,8 @@ Resultado esperado:
 3
 1
 */
+class Counter{
+    constructor(counter){
+        this.counter = 0
+    }
+}

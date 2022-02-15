@@ -14,3 +14,12 @@ let aux = new MyClass('bar1, bar2');
 1. Por favor actualiza el constructor de la clase para permitir que name(nombre), lastName
 (apellido) y birthDate(fecha de nacimiento) sean pasados como parámetros, en ese
 mismo orden.*/
+class Persona{
+    constructor(name, lastName, birthDate){
+        this.name = name,
+        this.lastName = lastName,
+        this.birthDate  = birthDate
+    }
+} 
+const bobDylan = new Persona("Bob", "Dylan", "May 24, 1941");
+console.log(bobDylan);

@@ -10,4 +10,5 @@ let d = new Date(); console.log(d);
 forma:
 Today is: 8-23-2018
 */
-
+let DateTime = new Date();
+console.log(`Today is: ${DateTime.getDay()}-${DateTime.getMonth()}-${DateTime.getFullYear()}`);
