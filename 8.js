@@ -18,5 +18,25 @@ del derecho legal de una persona a beber alcohol según su edad.
 Dentro de la función canDrinkAlcoholpuedes llamar y utilizar la función getAgeescribiendo:
 let age = this.getAge()
 retorna true si la edas es igual o mayor a 21.
-de lo contrario retorna false.
-*/
+de lo contrario retorna false.*/
+class Person {
+	constructor(anio, mes, fecha) {
+		this._birthday = new Date(anio, mes, fecha);
+	}
+
+	getAge() {
+		let ageDifMs = Date.now() - this._birthday.getTime();
+		let ageDate = new Date(ageDifMs);
+		return Math.abs(ageDate.getUTCFullYear() - 1970);
+	}
+	canDrinkAlcohol() {
+		if (this.getAge() >= 21) {
+			return true
+		}
+		else {
+			return false
+		}
+	}
+}
+let abraham = new Person(2003, 1, 2);
+console.log(abraham.canDrinkAlcohol());
